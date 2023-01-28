@@ -51,9 +51,9 @@ export default function TransferFunds(props){
     return(
         <div>
             <h1>Funds Transfer Transaction</h1>
-            <p>Address to transfer here: </p>
-            <input  placeholder="Address to transfer" name="address" id="address" style={{width:500, height: 50, textAlign:'left'}} onChange={(e) => setReceiver(e.target.value)}></input> <br />
-            <input  placeholder="Amount to transfer in ALGO" name="algo" id="algo" style={{width:500, height: 50, textAlign:'left', marginTop:'5%'}} onChange={(e) => setAlgo(e.target.value)}></input>
+            <p>Insert Address to transfer here: </p>
+            <input  placeholder="Address to transfer" name="address" id="address" style={{width:520, height: 50, textAlign:'center'}} onChange={(e) => setReceiver(e.target.value)}></input> <br />
+            <input  placeholder="Amount to transfer in ALGO" name="algo" id="algo" style={{width:200, height: 50, textAlign:'center', marginTop:'5%', marginBottom:'1%'}} onChange={(e) => setAlgo(e.target.value)}></input>
             {!address ? 
             <div>
                 <button style={{marginRight:10}} onClick={() => connectWallet('pera')}>Pera</button>
